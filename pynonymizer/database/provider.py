@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-
-SEED_TABLE_NAME = "_pynonymizer_seed_fake_data"
+from random import randint
+SEED_TABLE_NAME = f"_pynonymizer_seed_fake_data_{randint(1, 99999)}"
 
 
 class DatabaseProvider(ABC):
